@@ -1,0 +1,12 @@
+{
+  "name": "project-homework",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "",
+    "build": "rm -rf public/scripts && tsc",
+    "build:dev": "rm -rf public/scripts && tsc -p tsconfig-dev.json"
+  },
+  "dependencies": {
+    "typescript": "^4.9.5"
+  }
+}
