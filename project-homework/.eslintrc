@@ -1,0 +1,35 @@
+// стандартные настройки es-linter
+// {
+//     "root": true,
+//     "parser": "@typescript-eslint/parser",
+//     "plugins": [
+//         "@typescript-eslint"
+//     ],
+//     "extends": [
+//         "eslint:recommended",
+//         "plugin:@typescript-eslint/eslint-recommended",
+//         "plugin:@typescript-eslint/recommended"
+//     ]
+// }
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "quotes": [ //должны использоваться одинарные кавычки
+            "error",
+            "single"
+        ],
+        "indent": [ //и два символа пробела для отступов
+            "error",
+            2
+        ]
+    }
+}

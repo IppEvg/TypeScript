@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "scripts": {
     "start": "",
-    "build": "rm -rf public/scripts && tsc",
-    "build:dev": "rm -rf public/scripts && tsc -p tsconfig-dev.json"
+    "build": "tsc",
+    "build:dev": "tsc -p tsconfig-dev.json",
+    "lint": "eslint src --ext .js --ext .ts",
+    "lint-fix": "eslint src --ext .js --ext .ts --fix"
   },
   "dependencies": {
     "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
+    "eslint": "^8.33.0"
   }
 }
